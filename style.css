@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+/* font-family: 'Playball', cursive; */
+
+/* todo el body y en general (*=todo)*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* todo el header (menu fijo superior)*/
+header {
+    background-color: rgba(150, 230, 203, 1);
+    height: 90px;
+    padding-top: 5px;
+    padding-left: 5px;;
+    /* que la posicion sea flotante y el efecto
+    recibido sea que el resto (main)
+    sube y se mezcla con el encabezado */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header * {
+    display: inline;
+    /* ubica el titulo 
+    y los li en la misma linea */
+}
+
+.logo {
+    margin: 20px;
+    font-size:40px;
+    /* font-size: italic; */
+    font-family: 'Playball', cursive;
+}
+
+header li {
+    margin: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(41,38,38,1);
+    font-size: 20px;
+    /* mostrar el efecto hover sin hacer hover (posicionar el cursor
+    sobre la etiqueta a) */
+    padding: 10px 30px;
+    margin-right: 10px;
+    /* border:rgba(255, 217, 0, 0.603) solid 3px; */
+    /* border-radius: 20px; */
+}
+
+
+header a:hover {
+    background-color: rgba(255, 217, 0, 0.603);
+    border-radius: 20px;
+}
+
+/* sumenu */
+/* por defecto la posicion es relativa es decir referencia a otros
+objetos y sigue un orden, por eso el submenu se acopla al 
+menu principal */
+.sub-menu {
+    /* saca de la linea del menu principal al
+    sub menu */
+    position: absolute;
+    /* el submenu pasa a la linea de abajo del menuprincipal */
+    display: flex;
+    /* setear en posicion de columna */
+    
+    flex-direction: row;
+    left: 11%;
+    /* top: 120%; */
+    /* border:0px; */
+    display:none;
+}
+
+/* cuando el cursor esta arriba del boton homeButton
+entonces sub.menu se muestra con display */
+#homeButton:hover .sub-menu {
+    display: flex;
+}
+.sub-menu a:hover {
+    background-color: rgba(26, 175, 13, 0.603);
+    border-radius: 20px;
+}
+
+/* cuerpo */
+main {
+    /* coincide con el height del
+    header */
+    margin-top:100px;
+}
+
+.sections {
+    /* width: 1000px; */
+    /* defino ancho desde margen izquierdo */
+    width: 1100px;
+    /* justifico en ancho definido */
+    text-align: justify;
+
+    /* centro el texto en pantalla */
+    margin: 0 auto;
+}
+
+#special-section {
+    /* imagen de fondo en la seccion */
+    background-image: url(./assets/img/fotoChica.png);
+    /* no se repita */
+    background-repeat: no-repeat;
+    /* imagen centrada */
+    background-position: center;
+    /* se expanda la imagen en la seccion */
+    background-size: cover;
+}
+
+#special-section h2 {
+    /* configurar el titulo de la segunda seccion */
+    color:rgba(0,0,0,.5);
+}
+
+.sections h2 {
+    color:rgb(224, 170, 98);
+    text-align:center;
+}
+
+/* no anda con la fuente elegida */
+/* p {
+    font-weight: 300;
+} */
+
+/* tiempo 20:49 */
+/* clase 5 */
+
