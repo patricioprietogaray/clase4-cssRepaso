@@ -64,6 +64,13 @@ header #homeButton:hover {
     border-radius: 20px;
 }
 
+header #newsButton:hover {
+    padding: 5px 0px;
+    /* margin-right: 10px; */
+    background-color: rgba(238, 11, 208, 0.603);
+    border-radius: 20px;
+}
+
 /* sumenu */
 /* por defecto la posicion es relativa es decir referencia a otros
 objetos y sigue un orden, por eso el submenu se acopla al 
@@ -84,7 +91,29 @@ menu principal */
     padding-left: 0;
     border-radius: 20px;
     background-color: rgba(150, 230, 203, 1);
+    text-align: center;  
     /* border:0px; */
+    display:none;
+}
+
+.sub-menuNews {
+    /* saca de la linea del menu principal al
+    sub menu */
+    position: absolute;
+    /* el submenu pasa a la linea de abajo del menuprincipal */
+    display: flex;
+    /* setear en posicion de fila */
+    
+    flex-direction: column;
+    left: 32%;
+    top: 110%;
+    width: 11%;
+    height: 96%;
+    padding-left: 0;
+    border-radius: 20px;
+    background-color: rgba(150, 230, 203, 1);
+    /* border:0px; */
+    text-align: center;
     display:none;
 }
 
@@ -111,6 +140,28 @@ entonces sub.menu se muestra con display */
 
 .sub-menu #sm3:hover {
     background-color: rgb(173, 170, 11);
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+/* cuando el cursor esta arriba del boton News
+entonces sub.menu se muestra con display */
+#newsButton:hover .sub-menuNews {
+    display: flex;
+}
+/* .sub-menu a:hover {
+    background-color: rgba(26, 175, 13, 0.603);
+    border-radius: 20px;
+} */
+
+.sub-menuNews #n1:hover {
+    background-color: rgb(230, 74, 191);
+    border-radius: 20px 20px 0px 0px;
+    /* padding: 5px; */
+}
+
+.sub-menuNews #n2:hover {
+    background-color: rgb(235, 156, 215);
     border-radius: 0px 0px 20px 20px;
 }
 
