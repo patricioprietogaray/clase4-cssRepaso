@@ -84,9 +84,10 @@ menu principal */
     /* setear en posicion de fila */
     
     flex-direction: column;
-    left: 12%;
+    /* left: 12%; */
+    left: 170px;
     top: 110%;
-    width: 10%;
+    width: 140px;
     height: 146%;
     padding-left: 0;
     border-radius: 20px;
@@ -105,9 +106,12 @@ menu principal */
     /* setear en posicion de fila */
     
     flex-direction: column;
-    left: 32%;
+    /* hacerlo con pixeles y no con porcentajes porque las distintas
+    plataformas reaccionan de diferente manera */
+    /* left: 32%; */
+    left: 450px;  
     top: 110%;
-    width: 11%;
+    width: 160px;
     height: 96%;
     padding-left: 0;
     border-radius: 20px;
@@ -165,7 +169,59 @@ entonces sub.menu se muestra con display */
     border-radius: 0px 0px 20px 20px;
 }
 
-/* cuerpo */
+/* test para el flex */
+/* pensar en cajitas */
+/* flex en div base */
+/* #flex-test {
+    /* seccion */
+    height: 400px;
+    width: 100%;
+    background-color: #e6ab6d;
+} */
+
+/* flex en div de 1er nivel */
+/* .flex-container {
+    height: 300px;
+    width: 500px;
+    background-color: #884e0f; */
+    /* cambia la orientacion vertical a horizontal (display flex) */
+    /* display:flex; */
+    /* separa en forma horizontal cada caja */
+    /* gap: 5px; */
+    /* lo veo todo separado con margin */
+    /* margin: 10px; */
+
+    /* los flex item no exceden el contenedor y se van achicando, cuando hay muchos y su
+    tamaño es mínimo pueden exceder, para evitarlo se utiliza la propiedad wrap
+     el valor por defecto es nowrap, de esta forma achica
+     el ancho para que quepan en el contenedor*/
+    /* flex-wrap: wrap; */
+
+    /* declarar flex: wrap column equivale a las declaradas
+    anteriormente*/
+
+    /* WRAP SE UTILIZA PARA EL DISEÑO RESPONSIVO */
+    
+/* } */
+
+/* .flex-items { */
+    /* los tres divs */
+    /* background-color: rgb(226, 80, 55); */
+    /* si anulo el width ocupara tan poco espacio como
+    sea suficiente */
+    /* width: 145px; */
+    /* en cambio si elimino el height ocupará tanto espacio como
+    sea suficiente, es decir que el heigt será igual al contenedor  */
+    /* height: 50px; */
+    /* lo veo todo separado con margin */
+    /* margin: 10px; */
+    /* ATENTI: funciona cunado flex-direction es row si flex-direction es column entonces
+    el comportamiento será al reves (con width y height) */
+    
+
+/* } */
+
+/* Resto del contenido en el cuerpo */
 main {
     /* coincide con el height del
     header */
@@ -209,6 +265,6 @@ main {
     font-weight: 300;
 } */
 
-/* tiempo 31:49 */
+/* tiempo 1:09:24 */
 /* clase 5 */
 
