@@ -11,6 +11,7 @@
 }
 body {
     margin: 0;
+    top:150px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -88,7 +89,7 @@ menu principal */
     left: 170px;
     top: 110%;
     width: 140px;
-    height: 146%;
+    /* height: 146%; */
     padding-left: 0;
     border-radius: 20px;
     background-color: rgba(150, 230, 203, 1);
@@ -112,7 +113,7 @@ menu principal */
     left: 450px;  
     top: 110%;
     width: 160px;
-    height: 96%;
+    /* height: 96%; */
     padding-left: 0;
     border-radius: 20px;
     background-color: rgba(150, 230, 203, 1);
@@ -172,18 +173,55 @@ entonces sub.menu se muestra con display */
 /* test para el flex */
 /* pensar en cajitas */
 /* flex en div base */
-/* #flex-test {
+.flex-test {
     /* seccion */
-    height: 400px;
-    width: 100%;
-    background-color: #e6ab6d;
-} */
+    height: 250px;
+    width: 700px;
+    background-color: #3f2305;
+    display: flex;
+
+    margin: 0 auto;
+    
+}
+
+.flex-item {
+    /* los tres divs */
+    background-color: rgba(248, 248, 248, 0.589);
+    /* si anulo el width ocupara tan poco espacio como
+    sea suficiente */
+    width: 33%;
+    /* en cambio si elimino el height ocupará tanto espacio como
+    sea suficiente, es decir que el heigt será igual al contenedor  */
+    height: 90%;
+    /* lo veo todo separado con margin */
+    margin: 10px;
+    /* ATENTI: funciona cunado flex-direction es row si flex-direction es column entonces
+    el comportamiento será al reves (con width y height) */
+    /* padding: 30px; */
+    /* flex: 1; */
+    /* para centrar la imagen con el texto */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-item h4 {
+    font-family: 'Lato', sans-serif; 
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flex-item p {
+    text-align: center;
+}
 
 /* flex en div de 1er nivel */
-/* .flex-container {
-    height: 300px;
-    width: 500px;
-    background-color: #884e0f; */
+/* .flex-container { */
+    /* height: 300px; */
+    /* width: 500px; */
+    /* background-color: #884e0f;  */
     /* cambia la orientacion vertical a horizontal (display flex) */
     /* display:flex; */
     /* separa en forma horizontal cada caja */
@@ -204,22 +242,13 @@ entonces sub.menu se muestra con display */
     
 /* } */
 
-/* .flex-items { */
-    /* los tres divs */
-    /* background-color: rgb(226, 80, 55); */
-    /* si anulo el width ocupara tan poco espacio como
-    sea suficiente */
-    /* width: 145px; */
-    /* en cambio si elimino el height ocupará tanto espacio como
-    sea suficiente, es decir que el heigt será igual al contenedor  */
-    /* height: 50px; */
-    /* lo veo todo separado con margin */
-    /* margin: 10px; */
-    /* ATENTI: funciona cunado flex-direction es row si flex-direction es column entonces
-    el comportamiento será al reves (con width y height) */
-    
 
-/* } */
+
+.flex-item img {  
+    width: 60%;
+    margin-left: 40px;
+    margin-top: 10px;
+}
 
 /* Resto del contenido en el cuerpo */
 main {
